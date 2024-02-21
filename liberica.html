@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liberica Coffee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="beans.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="custom-navbar">
+  <div class="custom-navbar-content">
+    <a href="index.html#types" class="custom-navbar-item">Back</a> <!-- Back button -->
+  </div>
+</div>
+
+<!-- Header -->
+<header class="custom-header">
+  <img class="custom-header-image" src="header2.jpg" alt="Hamburger Catering" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="custom-page-content">
+
+  <!-- About Section -->
+  <div class="custom-about-section">
+    <div class="custom-about-left-column">
+     <img src="kohi3.jpg" class="custom-about-image" width="600" height="750">
+    </div>
+
+    <div class="custom-about-right-column">
+      <h1 class="custom-about-title">Liberica Coffee</h1><br>
+      <h5 class="custom-about-subtitle">Southeast Asian Coffee</h5>
+      <p class="custom-about-description">Liberica coffee, a lesser-known species under the Coffea genus, has its origins in Liberia, West Africa, but is predominantly grown and consumed in Southeast Asia, particularly in the Philippines, Indonesia, and Malaysia. In the Philippines alone, liberica accounts for over 70% of coffee production. Colonists likely introduced liberica to Southeast Asia during the colonial period, and its popularity surged in the late 19th century due to its resistance to coffee leaf rust, a devastating disease that affected arabica plants worldwide.</p>
+      <p class="custom-about-description">Characterized by its sturdy nature, liberica trees can grow up to 17 meters tall and produce large leaves and cherries, almost double the size of those from arabica and robusta plants. The flavor profile of liberica coffee is distinct, with naturally processed beans often exhibiting fruity notes reminiscent of jackfruit. Additionally, liberica is known for its sweetness, attributed to its porous seeds that absorb more sugars during processing.</p>
+      <p class="custom-about-description">In recent years, efforts to promote and popularize liberica have been successful, particularly in Southeast Asia. Specialty coffee roasters and cafés are beginning to explore liberica as a single origin, experimenting with various processing techniques to highlight its unique flavors. Furthermore, the resilience of liberica to pests and diseases, along with its ability to grow well alongside other crops, makes it an attractive option for farmers seeking stability amidst climate change challenges. As perceptions of liberica evolve and demand for specialty varieties increases, it may offer a promising future for both producers and consumers seeking diversity and sustainability in the coffee industry.</p>
+      <p class="custom-about-description">The renewed interest in liberica coffee extends beyond Southeast Asia, with coffee enthusiasts and specialty coffee lovers around the world showing curiosity and appreciation for its unique characteristics. Events like Borneo's Coffee Symposium, featuring specialty liberica and roasting competitions, highlight the growing recognition of liberica's potential in the global coffee market. As consumers become more adventurous in their coffee preferences, driven by a desire for rare and exceptional varieties, the future of liberica coffee holds promise as a niche yet valuable addition to the diverse array of coffee options available worldwide.</p>
+    </div>
+  </div>
+  <a href="#" id="backToTopButton" class="back-to-top-button">Back to Top</a>
+  <!-- JavaScript to toggle Back to Top button visibility -->
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        var button = document.getElementById('backToTopButton');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    // Smooth scroll to top when the button is clicked
+    document.getElementById('backToTopButton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        var topPos = 0; // Destination scroll position (top of the page)
+        window.scroll({
+            top: topPos,
+            behavior: 'smooth' // Smooth scrolling behavior
+        });
+    });
+</script>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+
+.custom-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure navbar is on top of header */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-family: Poppins;
+}
+
+.custom-navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-navbar-item {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.custom-navbar-item:hover {
+    color: orange;
+}
+
+.custom-header {
+    position: relative;
+}
+
+.custom-header-image {
+    width: 100%;
+    height: auto;
+}
+
+.custom-header-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.custom-header-title {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    font-size: 36px;
+    margin: 0;
+    color: white;
+}
+
+.custom-page-content {
+    margin-top: 50px; /* Ensure content starts below the header image */
+    padding: 20px;
+}
+
+.custom-about-section {
+    display: flex;
+    padding: 64px 0;
+}
+
+.custom-about-left-column {
+    flex: 1;
+}
+
+.custom-about-image {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.custom-about-right-column {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.custom-about-title {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    font-size: 36px;
+    margin: 0;
+}
+
+.custom-about-subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.custom-about-description {
+    font-size: 18px;
+    color: #757575;
+    margin: 0.5rem 0 1.1rem;
+}
+
+
+@media only screen and (max-width: 320px) {
+    .custom-about-section {
+        flex-direction: column;
+    }
+    
+    .custom-about-left-column,
+    .custom-about-right-column {
+        padding-left: 0;
+    }
+
+    .custom-about-image {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    .custom-about-section {
+        flex-direction: column;
+    }
+    
+    .custom-about-left-column,
+    .custom-about-right-column {
+        padding-left: 0;
+    }
+
+    .custom-about-image {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .custom-about-section {
+        flex-direction: row;
+    }
+
+    .custom-about-image {
+        max-width: 300px;
+    }
+}
+
+.back-to-top-button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #8B4513; /* Background color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-to-top-button:hover {
+    background-color: #572908; /* Hover background color */
+}

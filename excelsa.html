@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excelsa Coffee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="beans.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="custom-navbar">
+  <div class="custom-navbar-content">
+    <a href="index.html#types" class="custom-navbar-item">Back</a> <!-- Back button -->
+  </div>
+</div>
+
+<!-- Header -->
+<header class="custom-header">
+  <img class="custom-header-image" src="header2.jpg" alt="Hamburger Catering" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="custom-page-content">
+
+  <!-- About Section -->
+  <div class="custom-about-section">
+    <div class="custom-about-left-column">
+     <img src="kohi4.jpg" class="custom-about-image" width="600" height="750">
+    </div>
+
+    <div class="custom-about-right-column">
+      <h1 class="custom-about-title">Excelsa Coffee</h1><br>
+      <h5 class="custom-about-subtitle">Desirable with Unique Flavors</h5>
+      <p class="custom-about-description">Excelsa coffee, discovered in Africa at the start of the 20th century, remains relatively obscure in the global coffee market. While its exact trade and consumption figures are unclear due to its minimal presence, it has been cultivated and consumed in Africa and Asia for years. Despite this, its origin, often misunderstood, has led to improper cultivation and processing, resulting in a reputation for low cup quality and lack of distinctive flavor.</p>
+      <p class="custom-about-description">Much like robusta, excelsa has the potential to yield beans with desirable and unique flavors when farmed and processed carefully. Originally discovered in Central Africa in 1903 and later reclassified as a variety of the liberica species, excelsa faces confusion in labeling and classification, contributing to unreliable production data and decreased quality. However, the species’ resilience to disease and pests, along with its ability to grow in challenging conditions, presents opportunities for its cultivation, especially in regions affected by climate change.</p>
+      <p class="custom-about-description">Despite the challenges associated with its production, excelsa can produce a complex and interesting cup profile when processed with care. With the rise of specialty coffee and increasing demand for unique beans, there is potential for excelsa to find a niche market. However, its lack of awareness, coupled with the absence of a commodity market and standardized pricing, presents significant obstacles to its widespread adoption. Nonetheless, continued research, experimentation, and buyer feedback may help establish excelsa as another specialty option for consumers, offering a glimpse into the untapped potential of this resilient coffee species.</p>
+    </div>
+  </div>
+  <a href="#" id="backToTopButton" class="back-to-top-button">Back to Top</a>
+  <!-- JavaScript to toggle Back to Top button visibility -->
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        var button = document.getElementById('backToTopButton');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    // Smooth scroll to top when the button is clicked
+    document.getElementById('backToTopButton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        var topPos = 0; // Destination scroll position (top of the page)
+        window.scroll({
+            top: topPos,
+            behavior: 'smooth' // Smooth scrolling behavior
+        });
+    });
+</script>
+
+</div>
+
+</body>
+</html>

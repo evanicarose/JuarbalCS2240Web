@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Robusta Coffee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="beans.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="custom-navbar">
+  <div class="custom-navbar-content">
+    <a href="index.html#types" class="custom-navbar-item">Back</a> <!-- Back button -->
+  </div>
+</div>
+
+<!-- Header -->
+<header class="custom-header">
+  <img class="custom-header-image" src="header2.jpg" alt="Hamburger Catering" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="custom-page-content">
+
+  <!-- About Section -->
+  <div class="custom-about-section">
+    <div class="custom-about-left-column">
+     <img src="kohi2.jpg" class="custom-about-image" width="600" height="750">
+    </div>
+
+    <div class="custom-about-right-column">
+      <h1 class="custom-about-title">Robusta Coffee</h1><br>
+      <h5 class="custom-about-subtitle">Earthy and Bitter Taste</h5>
+      <p class="custom-about-description">Robusta coffee, while often associated with its bitter and earthy taste, offers a unique and distinctive flavor profile that can be appreciated by coffee enthusiasts worldwide. Its bold and robust flavor, coupled with its higher caffeine content compared to arabica beans, makes it an ideal choice for those seeking a strong and invigorating cup of coffee. While some may initially find its taste intense, many coffee aficionados come to appreciate the depth and complexity that robusta adds to blends, particularly in espresso-based beverages where its contribution to crema formation is highly valued.</p>
+      <p class="custom-about-description">In addition to its flavor characteristics, the robusta coffee plant itself possesses remarkable resilience and adaptability, thriving in hot climates and low-altitude regions. Its ability to withstand harsh conditions makes it an attractive option for cultivation in areas where arabica plants may struggle to survive. Furthermore, the robusta plant exhibits natural resistance to pests and diseases, reducing the need for chemical pesticides and enhancing its appeal among environmentally-conscious coffee growers.</p>
+      <p class="custom-about-description">Despite its popularity in certain regions and its widespread use in coffee blends, robusta coffee often faces misconceptions regarding its quality and desirability. While it may be true that lower-grade robusta beans can exhibit undesirable flavors reminiscent of burnt rubber, high-quality robusta beans carefully sourced and processed can offer a delightful coffee experience. With the right cultivation, harvesting, and roasting techniques, robusta coffee can showcase a range of nuanced flavors and aromas, challenging preconceived notions and earning its place alongside arabica as a valued component in the world of specialty coffee.</p>
+    </div>
+  </div>
+  <a href="#" id="backToTopButton" class="back-to-top-button">Back to Top</a>
+  <!-- JavaScript to toggle Back to Top button visibility -->
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        var button = document.getElementById('backToTopButton');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    // Smooth scroll to top when the button is clicked
+    document.getElementById('backToTopButton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        var topPos = 0; // Destination scroll position (top of the page)
+        window.scroll({
+            top: topPos,
+            behavior: 'smooth' // Smooth scrolling behavior
+        });
+    });
+</script>
+
+</div>
+
+</body>
+</html>

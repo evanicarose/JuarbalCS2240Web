@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arabica Coffee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="beans.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="custom-navbar">
+  <div class="custom-navbar-content">
+    <a href="index.html#types" class="custom-navbar-item">Back</a> <!-- Back button -->
+  </div>
+</div>
+
+<!-- Header -->
+<header class="custom-header">
+  <img class="custom-header-image" src="header2.jpg" alt="Hamburger Catering" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="custom-page-content">
+
+  <!-- About Section -->
+  <div class="custom-about-section">
+    <div class="custom-about-left-column">
+     <img src="kohi1.jpg" class="custom-about-image" width="600" height="750">
+    </div>
+
+    <div class="custom-about-right-column">
+      <h1 class="custom-about-title">Arabica Coffee</h1><br>
+      <h5 class="custom-about-subtitle">The Finest Coffee Beans</h5>
+      <p class="custom-about-description">Arabica coffee, derived from the Coffea arabica plant, dominates global coffee production, comprising over 60%. Originating in Ethiopia, it spread to Arabia in the 7th century, where it was first brewed as a beverage. Arabica coffee is characterized by a slightly sweet taste with notes of chocolate, nuts, caramel, and sometimes fruit and berries. Its popularity is evident in its widespread use in coffee shops and cafes worldwide. While some blends incorporate robusta beans, arabica remains the primary choice for home brewing and commercial coffee drinks.</p>
+      <p class="custom-about-description">Arabica coffee is cultivated in subtropical regions with high humidity and temperatures ranging between 15°C and 24°C (59°F and 75°F). It thrives at elevations of 1,900+ feet (600+ meters) above sea level, typically on shaded hillsides. The Coffea arabica plant reaches maturity around 7 years and can grow up to 9-12 meters in the wild, though commercial cultivation maintains a height of about 2 meters for easier harvesting.</p>
+      <p class="custom-about-description">The plant produces small, white flowers with a sweet jasmine scent, which develop into berries. These berries, resembling cherries, are harvested when fully ripe, typically deep-red or dark-purple. Each berry contains two seeds, which are the coffee beans. Hand-picking ensures optimal ripeness, as the berries do not all mature simultaneously.
+      <p class="custom-about-description">After harvesting, the beans undergo processing to remove the parchment coat and silver skin. Arabica coffee thrives in tropical climates near the equator, with notable production in countries like Costa Rica, Mexico, Guatemala, Colombia, Ethiopia, Brazil, Rwanda, and India, with Brazil being the largest producer globally.</p>
+      </p>
+    </div>
+  </div>
+
+  <a href="#" id="backToTopButton" class="back-to-top-button">Back to Top</a>
+  <!-- JavaScript to toggle Back to Top button visibility -->
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        var button = document.getElementById('backToTopButton');
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    // Smooth scroll to top when the button is clicked
+    document.getElementById('backToTopButton').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        var topPos = 0; // Destination scroll position (top of the page)
+        window.scroll({
+            top: topPos,
+            behavior: 'smooth' // Smooth scrolling behavior
+        });
+    });
+</script>
+
+</div>
+
+</body>
+</html>
